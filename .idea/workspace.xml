@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FunctionPicture:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b255a42c-9569-41ae-a9c0-48ee84a55475" name="Changes" comment="">
+    <list default="true" id="b255a42c-9569-41ae-a9c0-48ee84a55475" name="Changes" comment="bug fixes">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/FunctionPicture_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JarRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/hello.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictureCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictureCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictureRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictureRead.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +50,23 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.JarRunner">
+    <configuration name="JarRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JarRunner" />
+      <module name="FunctionPicture" />
+      <option name="PROGRAM_PARAMETERS" value="-img &quot;C:\Users\ardad\Downloads\Flutter in action.pdf&quot; ./testing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="FunctionPicture" />
@@ -58,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JarRunner" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -70,11 +89,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678250575213</updated>
-      <workItem from="1678250576386" duration="7296000" />
+      <workItem from="1678250576386" duration="10289000" />
     </task>
+    <task id="LOCAL-00001" summary="bug fixes">
+      <created>1678330049753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678330049753</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
   </component>
 </project>
