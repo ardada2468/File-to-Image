@@ -6,6 +6,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
+/**
+ * Created by Arnav Dadarya
+ */
+
 public class pictureRead {
     public byte[] getData(String Path){
 

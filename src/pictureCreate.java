@@ -3,6 +3,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Created by Arnav Dadarya
+ */
 public class pictureCreate {
 
     private int height = 100;

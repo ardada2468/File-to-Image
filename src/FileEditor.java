@@ -5,6 +5,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+ * Created by Arnav Dadarya
+ */
+
 public class FileEditor {
     public static byte[] getBytesFromFile(String Path){
         Path path = Paths.get(Path);
