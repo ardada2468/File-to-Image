@@ -40,14 +40,15 @@ public class pictureCreate {
                     //Only blue pixel will be actual data
                     Pixel = new int[]{RandVal(), RandVal(), RandVal(), bytes[index]};
                 } else if (index == bytes.length) {
-                    //make that red pixel black
-                    //We can later identify when we have all the data
+                    //make that red pixel black to detect when random data starts
                     Pixel = new int[]{RandVal(), 0, RandVal(), RandVal()};
                 }else{
+                    //Create random pixel data
                     Pixel = new int[]{RandVal(), RandVal(), RandVal(), RandVal()};
 
                 }
 
+                //write pixel to img
                 int valPix = (Pixel[0]<<24) | (Pixel[1]<<16) | (Pixel[2]<<8) | Pixel[3];
                 Image.setRGB(x, y, valPix);
 
@@ -66,6 +67,7 @@ public class pictureCreate {
 
     }
 
+    //Simple function to generate a random value
     private int RandVal(){
         //Cannot return 0 value or 256
         return  (int) ( (Math.random()*254) + 1);
