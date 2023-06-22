@@ -1,3 +1,4 @@
+import java.io.File;
 
 /**
  * Created by Arnav Dadarya
@@ -36,6 +37,10 @@ public class JarRunner {
 
                     break;
                 case ("-file"):
+//                    File file = new File(args[1]);
+//                    if(file.isDirectory()){
+//                        BatchCreate.createfromDIR();
+//                    }
                     pictureRead read = new pictureRead();
                     FileEditor.write(read.getData(args[1]), args[2]);
                     System.out.println("Created File: " + args[2]);

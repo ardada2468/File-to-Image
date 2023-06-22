@@ -1,5 +1,9 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class BatchCreate {
@@ -12,6 +16,18 @@ public class BatchCreate {
             String[] paths = Line.split(",");
             threadCreate(paths[0], paths[1]);
         }
+
+    }
+
+    public static void createfromDIR(String DirFile, String OutputPath){
+        File folder = new File(DirFile);
+        File[] listOfFiles =folder.listFiles();
+
+        for (int i = 0; i < listOfFiles.length; i++) {
+            String pathsave = listOfFiles[i].getName().replace('.', '_')+".png";
+            threadCreate(listOfFiles[i].getAbsolutePath(), OutputPath+pathsave);
+        }
+
 
     }
 

@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b255a42c-9569-41ae-a9c0-48ee84a55475" name="Changes" comment="Added Encrypt.java (Not currently Implemented into program)">
-      <change afterPath="$PROJECT_DIR$/src/BatchCreate.java" afterDir="false" />
+    <list default="true" id="b255a42c-9569-41ae-a9c0-48ee84a55475" name="Changes" comment="Added MultiThreadingSupport">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encrypt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BatchCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BatchCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JarRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JarRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <workItem from="1679624315140" duration="2935000" />
       <workItem from="1686031682525" duration="376000" />
       <workItem from="1687389633469" duration="9044000" />
-      <workItem from="1687453121251" duration="3055000" />
+      <workItem from="1687453121251" duration="10141000" />
     </task>
     <task id="LOCAL-00001" summary="bug fixes">
       <created>1678330049753</created>
@@ -137,7 +136,23 @@
       <option name="project" value="LOCAL" />
       <updated>1687455854819</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added MultiThreadingSupport">
+      <option name="closed" value="true" />
+      <created>1687457047264</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687457047264</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added MultiThreadingSupport">
+      <option name="closed" value="true" />
+      <created>1687462220123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687462220123</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +173,7 @@
     <MESSAGE value="bug fixes" />
     <MESSAGE value="Added Jar Runner" />
     <MESSAGE value="Added Encrypt.java (Not currently Implemented into program)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Encrypt.java (Not currently Implemented into program)" />
+    <MESSAGE value="Added MultiThreadingSupport" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MultiThreadingSupport" />
   </component>
 </project>
