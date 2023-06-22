@@ -21,6 +21,7 @@ public class pictureCreate {
 
     public  void createImg(byte[] bytes, String path){
 
+        System.out.println("Processing: " + path);
 
         setDimensions(bytes.length);
         System.out.println("Picture Dimension: " + width);
@@ -55,10 +56,16 @@ public class pictureCreate {
                 index++;
             }
 
+//            if(index%10000 == 0){
+//                System.out.println("Currently Processing: " + path);
+//            }
+
         }
         try {
             output = new File(path);
+            System.out.println("Writing to Disk: " + path);
             ImageIO.write(Image, "png", output);
+            System.out.println("Image saved to disk " + path);
 
         } catch (IOException e) {
             System.out.println("Unable to write to disk!");
