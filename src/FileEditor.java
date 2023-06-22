@@ -24,7 +24,7 @@ public class FileEditor {
         if (data == null) {
             throw new RuntimeException();
         }
-
+        System.out.println("Finished Reading File: " + path);
         return data;
     }
 
