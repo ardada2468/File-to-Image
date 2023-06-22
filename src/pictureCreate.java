@@ -8,10 +8,10 @@ import java.io.IOException;
  */
 public class pictureCreate {
 
-    private int height = 100;
-    private int width = 100;
+    protected int height = 10;
+    protected int width = 10;
 
-    private void setDimensions(int size){
+    void setDimensions(int size){
         int totalpix = (width*height);
         if(size > totalpix-10){
             width = (int) (Math.pow(size,.5)) +1;
@@ -68,7 +68,7 @@ public class pictureCreate {
     }
 
     //Simple function to generate a random value
-    private int RandVal(){
+     int RandVal(){
         //Cannot return 0 value or 256
         return  (int) ( (Math.random()*254) + 1);
     }

@@ -42,8 +42,8 @@ public class pictureRead {
         byte[] bytes = new byte[size];
 
         int index = 0;
-        for (int x = 0; x < image.getWidth(); x++) {
-            for (int y = 0; y < image.getHeight(); y++) {
+        for (int x = 0; x < image.getHeight(); x++) {
+            for (int y = 0; y < image.getWidth(); y++) {
                 int pixel = image.getRGB(x,y);
                 Color color = new Color(pixel, true);
                 int[] argb = new int[]{color.getAlpha(), color.getRed(), color.getGreen(), color.getBlue()};
