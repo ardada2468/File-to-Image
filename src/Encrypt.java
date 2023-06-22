@@ -1,11 +1,17 @@
+import com.sun.istack.internal.NotNull;
+
 import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Encrypt {
-
+    @NotNull
     String Path;
     FileWriter writer;
+
+    public Encrypt(String path) {
+        Path = path;
+    }
 
     {
         try {
@@ -63,10 +69,10 @@ public class Encrypt {
         return clone;
     }
 
-    private int[] decryptrow(int[] array, int shift){
+    private static int[] decryptrow(int[] array, int shift){
       return shiftRow(array, array.length-shift);
     }
-    public void decrypt(int[][] array, String PathtoKey){
+    public static void decrypt(int[][] array, String PathtoKey){
         Scanner scanner;
         try {
            scanner = new Scanner(new File(PathtoKey));
