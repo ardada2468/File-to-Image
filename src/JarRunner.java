@@ -10,10 +10,12 @@ public class JarRunner {
         System.out.println("In order to use the CLI please read bellow");
         System.out.println("-----------------------");
         System.out.println("Convert File to Image: ");
-        System.out.println("-img [file path] [output path]");
+        System.out.println("-img [file folder/path] [output folder/path]");
+        System.out.println("You can convert entire Dirs too! (Output folder needs to already exist in file system)");
         System.out.println("-----------------------");
         System.out.println("Convert Image to File: ");
         System.out.println("-file [file path] [output path]");
+        System.out.println("You can convert entire Dirs too! (Output folder needs to already exist in file system)");
     }
 
     //args[0] --> mode
@@ -30,21 +32,25 @@ public class JarRunner {
 
             switch (args[0]) {
                 case ("-img"):
-                    System.out.println("Reading Image");
-                    pictureCreate create = new pictureCreate();
-                    create.createImg(FileEditor.getBytesFromFile(args[1]), args[2]);
-                    System.out.println("Created File: " + args[2]);
-
+                    File file = new File(args[1]);
+                    if(file.isDirectory()){
+                        BatchCreate.createfromDIR(args[1], args[2]);
+                    }else {
+                        System.out.println("Reading Image");
+                        pictureCreate create = new pictureCreate();
+                        create.createImg(FileEditor.getBytesFromFile(args[1]), args[2]);
+                        System.out.println("Created File: " + args[2]);
+                    }
                     break;
                 case ("-file"):
-//                    File file = new File(args[1]);
-//                    if(file.isDirectory()){
-//                        BatchCreate.createfromDIR();
-//                    }
-                    pictureRead read = new pictureRead();
-                    FileEditor.write(read.getData(args[1]), args[2]);
-                    System.out.println("Created File: " + args[2]);
-                    break;
+                    File file2 = new File(args[1]);
+                    if(file2.isDirectory()){
+                        BatchRead.readFromDir(args[1], args[2]);
+                    }else {
+                        pictureRead read = new pictureRead();
+                        FileEditor.write(read.getData(args[1]), args[2]);
+                        System.out.println("Created File: " + args[2]);
+                    }                    break;
                 case ("help"):
                     System.out.println("Hello!");
                     printinst();

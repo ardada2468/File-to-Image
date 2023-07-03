@@ -1,5 +1,6 @@
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
+import java.awt.image.Raster;
 import java.io.File;
 import java.io.IOException;
 
@@ -24,7 +25,7 @@ public class pictureCreate {
         System.out.println("Processing: " + path);
 
         setDimensions(bytes.length);
-        System.out.println("Picture Dimension: " + width);
+        System.out.println(path + " Picture Dimension: " + width);
 
 
         BufferedImage Image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
