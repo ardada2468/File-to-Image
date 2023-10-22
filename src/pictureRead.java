@@ -4,16 +4,23 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 /**
- * Created by Arnav Dadarya
+ * @Author Arnav Dadarya
+ * reads an Image that has been previously processed
+ *
  */
 
 public class pictureRead {
-    public byte[] getData(String Path){
 
+
+    /**
+     * Reads a previously processed img to get a byte array
+     * @param Path
+     * @return array of bytes hidden in the img
+     */
+    public static byte[] getData(String Path){
         File file= new File(Path);
         BufferedImage image = null;
         try {
@@ -23,47 +30,30 @@ public class pictureRead {
             throw new RuntimeException(e);
         }
         int size = 0;
+        ArrayList<Byte> bytes = new ArrayList<>();
 
         for (int x = 0; x < image.getWidth(); x++) {
             for (int y = 0; y < image.getHeight(); y++) {
                 //Reading each pixel
                 int pixel = image.getRGB(x,y);
                 Color color = new Color(pixel, true);
-                int[] argb = new int[]{color.getAlpha(), color.getRed(), color.getGreen(), color.getBlue()};
-                if(argb[1] == 0){
+                int[] argb = new int[]{ color.getRed(),  color.getBlue()};
+                //                                                                              3
+                if(argb[0] == 0){
                     x = image.getWidth()+1;
                     y = image.getHeight()+1;
                 }else {
+                    bytes.add((byte) argb[1]);
                     size++;
                 }
             }
         }
+        byte[] bytesArr = new byte[bytes.size()];
 
-        byte[] bytes = new byte[size];
-
-        int index = 0;
-        for (int x = 0; x < image.getHeight(); x++) {
-            for (int y = 0; y < image.getWidth(); y++) {
-                int pixel = image.getRGB(x,y);
-                Color color = new Color(pixel, true);
-                int[] argb = new int[]{color.getAlpha(), color.getRed(), color.getGreen(), color.getBlue()};
-//                System.out.println(Arrays.toString(argb));
-                if(argb[1] == 0){
-                    x = image.getWidth()+1;
-                    y = image.getHeight()+1;
-                }else {
-                    bytes[index] = (byte) argb[3];
-
-                }
-                index++;
-            }
+        for (int i = 0; i < bytes.size(); i++) {
+            bytesArr[i] = bytes.get(i);
         }
-
-
-
-//        System.out.println(Arrays.toString(bytes));
-
-      return bytes;
+      return bytesArr;
         
     }
 

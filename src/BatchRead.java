@@ -1,8 +1,23 @@
 import java.io.File;
+import java.util.LinkedList;
 
+/**
+ * @Author Arnav Dadarya
+ * Contains methods to read and process multiple files concurrently
+ */
 public class BatchRead {
 
+    /**
+     * Processes mutiple files in DIR concurrently
+     * @param DirFile
+     * @param OutputPath
+     */
+
     public static void readFromDir(String DirFile, String OutputPath){
+
+        LinkedList<String> x = new LinkedList<>();
+        x.get(0);
+
         File folder = new File(DirFile);
         File[] listOfFiles = folder.listFiles();
 
@@ -22,7 +37,13 @@ public class BatchRead {
 
     }
 
-    public static Thread threadCreate(String inputFile, String OutputPath){
+    /**
+     * Returns a thread that process a file
+     * @param inputFile
+     * @param OutputPath
+     * @return
+     */
+    private static Thread threadCreate(String inputFile, String OutputPath){
         Thread runnable = new Thread() {
             @Override
             public void run() {
@@ -34,7 +55,6 @@ public class BatchRead {
             }
         };
         runnable.start();
-
         return runnable;
     }
 }

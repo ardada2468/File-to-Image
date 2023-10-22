@@ -2,20 +2,25 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="FunctionPicture:jar" />
+      <artifact name="FunctionPicture" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b255a42c-9569-41ae-a9c0-48ee84a55475" name="Changes" comment="Added MultiThreadingSupport">
-      <change afterPath="$PROJECT_DIR$/src/BatchRead.java" afterDir="false" />
+    <list default="true" id="b255a42c-9569-41ae-a9c0-48ee84a55475" name="Changes" comment="Updated Docs">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/FunctionPicture.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Media/a.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/FunctionPicture_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/FunctionPicture_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BatchCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BatchCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FunctionPicture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionPicture.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BatchRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BatchRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JarRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JarRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pictureCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictureCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictureRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictureRead.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +30,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/JarRunner.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,35 +50,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Intellij/File-to-Image&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ardad\Code\Intellij\File-to-Image\Media" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.JarRunner">
     <configuration name="JarRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="JarRunner" />
       <module name="FunctionPicture" />
-      <option name="PROGRAM_PARAMETERS" value="-file C:\Users\ardad\Code\output C:\Users\ardad\Code\Input\NewFiles\" />
+      <option name="PROGRAM_PARAMETERS" value="-file testing.png m.pdf" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,9 +112,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="speedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="speedTest" />
+      <module name="FunctionPicture" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.JarRunner" />
+        <item itemvalue="Application.speedTest" />
         <item itemvalue="Application.Testing" />
         <item itemvalue="Application.Main" />
       </list>
@@ -110,7 +141,32 @@
       <workItem from="1686031682525" duration="376000" />
       <workItem from="1687389633469" duration="9044000" />
       <workItem from="1687453121251" duration="11068000" />
-      <workItem from="1688423235592" duration="2174000" />
+      <workItem from="1688423235592" duration="5764000" />
+      <workItem from="1688436784315" duration="294000" />
+      <workItem from="1688437095006" duration="1660000" />
+      <workItem from="1688497275652" duration="795000" />
+      <workItem from="1688499058018" duration="18000" />
+      <workItem from="1688617587708" duration="1240000" />
+      <workItem from="1688795980586" duration="13344000" />
+      <workItem from="1689833382871" duration="44000" />
+      <workItem from="1689914570539" duration="2001000" />
+      <workItem from="1690155890919" duration="1504000" />
+      <workItem from="1690226326876" duration="54000" />
+      <workItem from="1690252544589" duration="93000" />
+      <workItem from="1690301125450" duration="174000" />
+      <workItem from="1691192294096" duration="635000" />
+      <workItem from="1691282959749" duration="2674000" />
+      <workItem from="1691789973214" duration="5798000" />
+      <workItem from="1693239335831" duration="1536000" />
+      <workItem from="1693422264042" duration="24000" />
+      <workItem from="1694381087102" duration="203000" />
+      <workItem from="1694566559609" duration="834000" />
+      <workItem from="1694628319750" duration="44000" />
+      <workItem from="1694658656580" duration="399000" />
+      <workItem from="1694798833362" duration="1693000" />
+      <workItem from="1694976500116" duration="37000" />
+      <workItem from="1697854131184" duration="606000" />
+      <workItem from="1698013960304" duration="532000" />
     </task>
     <task id="LOCAL-00001" summary="bug fixes">
       <created>1678330049753</created>
@@ -166,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687473739983</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added MultiThreadingSupport">
+      <option name="closed" value="true" />
+      <created>1688425470822</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688425470822</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +252,7 @@
     <MESSAGE value="Added Jar Runner" />
     <MESSAGE value="Added Encrypt.java (Not currently Implemented into program)" />
     <MESSAGE value="Added MultiThreadingSupport" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MultiThreadingSupport" />
+    <MESSAGE value="Updated Docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Docs" />
   </component>
 </project>

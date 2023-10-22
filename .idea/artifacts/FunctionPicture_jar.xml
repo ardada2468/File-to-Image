@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="FunctionPicture:jar">
+  <artifact type="jar" build-on-make="true" name="FunctionPicture.jar">
     <output-path>$PROJECT_DIR$/out/artifacts/FunctionPicture_jar</output-path>
-    <root id="archive" name="FunctionPicture.jar">
+    <root id="root">
       <element id="module-output" name="FunctionPicture" />
     </root>
   </artifact>

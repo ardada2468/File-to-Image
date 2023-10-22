@@ -1,7 +1,8 @@
 import java.io.File;
 
 /**
- * Created by Arnav Dadarya
+ @Author Arnav Dadarya
+ Contains the termail UI for program
  */
 
 public class JarRunner {
@@ -55,7 +56,7 @@ public class JarRunner {
                     System.out.println("Hello!");
                     printinst();
                     break;
-                default:
+                default:    
                     System.out.println("invalid command");
                     printinst();
                     break;

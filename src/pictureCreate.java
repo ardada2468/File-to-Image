@@ -5,12 +5,13 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by Arnav Dadarya
+ * @Author Arnav Dadarya
+ * Contains methods to create an image based on a byte array
  */
 public class pictureCreate {
 
-    protected int height = 10;
-    protected int width = 10;
+    private int height = 10;
+    private int width = 10;
 
     void setDimensions(int size){
         int totalpix = (width*height);
@@ -20,13 +21,17 @@ public class pictureCreate {
         }
     }
 
+    /**
+     * Creates an image given a byte[] and a path (to save img)
+     * @param bytes bytes to write to pixels of img
+     * @param path path to save
+     */
     public  void createImg(byte[] bytes, String path){
 
         System.out.println("Processing: " + path);
 
         setDimensions(bytes.length);
         System.out.println(path + " Picture Dimension: " + width);
-
 
         BufferedImage Image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
 
@@ -47,7 +52,7 @@ public class pictureCreate {
                 }else{
                     //Create random pixel data
                     Pixel = new int[]{RandVal(), RandVal(), RandVal(), RandVal()};
-
+                    //TODO add encryption to the final img.
                 }
 
                 //write pixel to img
@@ -56,10 +61,6 @@ public class pictureCreate {
 
                 index++;
             }
-
-//            if(index%10000 == 0){
-//                System.out.println("Currently Processing: " + path);
-//            }
 
         }
         try {
