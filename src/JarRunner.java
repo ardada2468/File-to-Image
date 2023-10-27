@@ -2,9 +2,8 @@ import java.io.File;
 
 /**
  @Author Arnav Dadarya
- Contains the termail UI for program
+ Contains the  UI for program
  */
-
 public class JarRunner {
 
     private static void printinst(){

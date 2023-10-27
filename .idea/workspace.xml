@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="FunctionPicture" />
+      <artifact name="FunctionPictureAPI:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,12 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b255a42c-9569-41ae-a9c0-48ee84a55475" name="Changes" comment="Updated Docs">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Media/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BatchCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BatchCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encrypt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictureCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictureCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JarRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JarRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
@@ -165,6 +162,7 @@
       <workItem from="1694976500116" duration="37000" />
       <workItem from="1697854131184" duration="606000" />
       <workItem from="1698013960304" duration="1595000" />
+      <workItem from="1698367030072" duration="592000" />
     </task>
     <task id="LOCAL-00001" summary="bug fixes">
       <created>1678330049753</created>
@@ -236,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698014505120</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Updated Docs">
+      <option name="closed" value="true" />
+      <created>1698367069828</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698367069828</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
