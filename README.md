@@ -3,6 +3,8 @@ It enables you to create a image using the bytes of the file and then recreate t
 
 Download the latest version of FunctionPicture.jar from the Releases tab
 
+Recommended Java Version:  17.0.7
+
 Using the Jar:
 
 - Convert File to Image: 
